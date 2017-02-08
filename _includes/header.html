@@ -1,0 +1,38 @@
+<nav class="navbar navbar-custom" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="logo-wrapper">
+        <h2><a href="{{ "/" | prepend: site.github.url }}">Arts School</a></h2>
+      </div>
+    </div>  
+
+    <div class="collapse navbar-collapse nav-wrapper" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right menu">
+        <li><a href="{{ "/" | prepend: site.github.url }}">Home</a></li>
+        <li><a href="#">About Us <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ "/info" | prepend: site.github.url }}">General Information</a></li>
+            <li><a href="#">Classes <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Music Class <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="{{ "/1st_class" | prepend: site.github.url }}">1st Class</a></li>
+                    <li><a href="{{ "/2nd_class" | prepend: site.github.url }}">2nd Class</a></li>
+                  </ul>
+                </li>
+                <li><a href="{{ "#" | prepend: site.github.url }}">Painting Class</a></li>
+              </ul>
+            </li>
+            <li><a href="{{ "/calendar" | prepend: site.github.url }}">Calendar</a></li>
+          </ul>
+        </li>
+        <li><a href="{{ "/gallery" | prepend: site.github.url }}">Gallery</a></li>
+        <li><a href="{{ "/blog" | prepend: site.github.url }}">Blog</a></li>
+        <li><a href="{{ "/contact" | prepend: site.github.url }}">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
